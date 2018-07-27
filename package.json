@@ -4,6 +4,24 @@
   "main": "index.js",
   "repository": "https://github.com/funderstoken/delegated-transfer-and-call-encoder.git",
   "author": "funderstoken",
-  "license": "LGPL",
-  "private": false
+  "license": "LGPL-3.0-or-later",
+  "private": false,
+  "scripts": {
+    "precommit": "pretty-quick --staged",
+    "build": "babel index.js --out-file ./dist/index.js && babel lib --out-dir ./dist/lib",
+    "run-dist": "node dist/index.js"
+  },
+  "dependencies": {
+    "elliptic": "^6.4.0",
+    "js-sha3": "^0.7.0",
+    "web3-utils": "^1.0.0-beta.35"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.54",
+    "@babel/core": "^7.0.0-beta.54",
+    "@babel/preset-env": "^7.0.0-beta.54",
+    "husky": "^0.14.3",
+    "prettier": "^1.13.7",
+    "pretty-quick": "^1.6.0"
+  }
 }
