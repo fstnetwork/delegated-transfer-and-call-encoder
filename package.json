@@ -1,0 +1,9 @@
+{
+  "name": "delegated-transfer-and-call-encoder",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/funderstoken/delegated-transfer-and-call-encoder.git",
+  "author": "funderstoken",
+  "license": "LGPL",
+  "private": false
+}
